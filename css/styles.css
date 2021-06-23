@@ -20,8 +20,9 @@ img {
 
 nav li {
   list-style-type: none;
-  display: inline;
-  margin-right: 1em;
+  font-size: 1.05em;
+  margin: 0.25em;
+  border-bottom:1px solid white;
 }
 
 header {
@@ -34,6 +35,8 @@ nav {
   margin: 0, 1em, 0;
   padding: 1em, 6px, auto;
   padding-bottom: 6px;
+  font-size: 1.15em;
+  border-top: 4px solid white;
 }
 
 main {
@@ -41,6 +44,8 @@ main {
   padding-top: 1em;
   padding-left: 1em;
   margin-bottom: 1em;
+  padding-right: 1em;
+  font-size: 1.25em;
 }
 
 .top {
@@ -53,7 +58,9 @@ main {
 }
 
 h1 {
-  font-style: bold;
+  font-family:'Kirang Haerang', Arial, sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 2.8em;
 }
 
 footer {
@@ -85,3 +92,21 @@ header a:link, header a:visited {
   text-decoration: none;
 }
 
+#bloglink {
+  background-color: cyan;
+  text-align: center;
+  padding: 6px 10px;
+  font-size: 3em;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 10%;
+}
+
+
+
+/* Not for mobile */
+nav-li-store-for-later {
+  list-style-type: none;
+  display: inline;
+  margin-right: 1em;
+}
