@@ -4,7 +4,7 @@ File Name: styles.css
 Date: 06/21/2021
 */
 
-body, header, h1, h2, nav, ul, main, div, footer {
+body, header, h1, h2, nav, ul, main, div, footer, article, section, aside {
   margin: 0;
   padding: 0;
   border: 0;
@@ -61,6 +61,7 @@ h1 {
   font-family:'Kirang Haerang', Arial, sans-serif;
   letter-spacing: 0.1em;
   font-size: 2.8em;
+  text-shadow: 1px 1px 20px gainsboro;
 }
 
 footer {
@@ -118,6 +119,10 @@ header a:link, header a:visited {
   display: none;
 }
 
+figure {
+  display: none;
+}
+
 
 /* Media Query for Tablet viewport */ 
 @media screen and (min-width: 630px) {
@@ -156,6 +161,16 @@ header a:link, header a:visited {
     margin: 1em;
   }
 
+  figure {
+    display: none;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+  }
+
 }
 
 /* Media Query for Desktop viewport */ 
@@ -173,6 +188,41 @@ header a:link, header a:visited {
   .megamap {
     display: block;
     margin: 1em;
+  }
+
+  header {
+    text-align: right;
+    padding-right: 1em;
+  }
+
+  h1 {
+    font-size: 5em;
+  }
+
+  h2 {
+    padding-bottom: 1.8em;
+    font-size: 2em;
+  }
+
+  figure {
+    float: left;
+    display: block;
+    width: 9%;
+    height: 9%;
+  }
+  
+  figcaption {
+    text-align: center;
+  }
+
+  nav {
+    clear: left;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
   }
 
 }
