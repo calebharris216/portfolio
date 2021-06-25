@@ -4,7 +4,7 @@ File Name: styles.css
 Date: 06/21/2021
 */
 
-body, header, h1, h2, nav, ul, main, div, footer, article, section, aside {
+body, header, h1, h2, nav, ul, main, div, footer, article, section, aside, table {
   margin: 0;
   padding: 0;
   border: 0;
@@ -123,6 +123,30 @@ figure {
   display: none;
 }
 
+#aboutme {
+  margin-left: 0.5em;
+}
+
+table {
+  display: block;
+  margin-top: 3em;
+  margin-left: 1em;
+}
+
+table, td, th {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+td {
+  padding: 5px;
+}
+
+#newsletterform {
+  border: 1px solid black;
+  margin: 0.25em;
+  padding: 0.5em;
+}
 
 /* Media Query for Tablet viewport */ 
 @media screen and (min-width: 630px) {
@@ -170,6 +194,8 @@ figure {
     grid-template-columns: auto auto;
     grid-gap: 10px;
   }
+
+  
 
 }
 
